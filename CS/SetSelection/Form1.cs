@@ -11,13 +11,11 @@ namespace SetSelection {
         private void btnDiagram_Click(object sender, EventArgs e) {
             // Select a diagram.
             chartControl1.SetObjectSelection(chartControl1.Diagram);
-            chartControl1.Refresh();
         }
 
         private void btnAxis_Click(object sender, EventArgs e) {
             // Select an axis.
             chartControl1.SetObjectSelection(((XYDiagram)chartControl1.Diagram).AxisX);
-            chartControl1.Refresh();
         }
 
         private void btnSeriesPoint_Click(object sender, EventArgs e) {
@@ -26,7 +24,6 @@ namespace SetSelection {
             if (pointToSelect != null) {
                 this.chartControl1.SetObjectSelection(pointToSelect);
             }
-            chartControl1.Refresh();
         }
     }
 }
